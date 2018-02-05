@@ -77,12 +77,12 @@ WSGI_APPLICATION = 'imagix.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
+        'ENGINE': 'mysql_cymysql',
         'NAME': 'imagix',
         'USER': 'root',
         'PASSWORD': '',
-        'HOST': 'localhost',
-        'PORT': 3306,
+        'HOST': '',
+        'PORT': '',
     }
 }
 
