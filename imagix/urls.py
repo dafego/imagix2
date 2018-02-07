@@ -15,7 +15,11 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from imagix_app.views import hola, fecha_actual, horas_adelante
+from django.conf.urls import url
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    url(r'^hola/$', hola, name ='hola'),
+    url(r'^fecha/$', fecha_actual, name ='fecha'),
+    url(r'^fecha/mas/(\d{1,2})/$', horas_adelante, name='hora  s_adelante'),
 ]
